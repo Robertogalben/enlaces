@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: antiquewhite;}
+        h1{
+            font-size: 25px;
+            color: brown;
+            font-family: Arial;}
+        .derechos{
+            font-size: 20px;}
+        label{
+            font-family: Arial;
+            font-size: 15px; }
+        legend{
+            font-size: 26px;}
+    </style>
+</head>
+<body>
+    <h1>Formulario de información</h1>
+    
+    <form action="formulario.php" method="post">
+    <fieldset><legend>Sus Datos</legend>
+        <p><label for="nombre">Nombre y Apellidos <input type="text" maxlength="50"></label></p>
+
+        <p><label for="contraseña">Contraseña <input type="password" maxlength="8"></label></p>
+
+        <p><label for="">Usuario <input type="text" disabled value="anonimo" ></label></p>
+
+        <p><label for="">Nivel:
+            <p class="derechos"><input type="radio" name="nivel" >Profesional</p>
+            <p class="derechos"><input type="radio" name="nivel">Avanzado</p>
+            <p class="derechos"><input type="radio" name="nivel">Principiante</p>
+            </label>
+        </p>
+    </fieldset>
+        <p>Nacionalidad:
+        <select name="nacionalidad" size="1">
+            <option value="españa">España</option>
+            <option value="francia">Francia</option>
+            <option value="portugal">Portugal</option>
+        </select></p>
+        
+        <p>Descripción:     
+                <textarea name="descripcion" rows="3"></textarea>
+        </p>
+
+        
+        <p><label class="derechos"><input type="checkbox" name="desear" checked>Deseo recibir informacion sobre novedades y ofertas</label></p>
+        <p><label class="derechos"><input type="checkbox" name="leido" >Declaro haber leido y acepto las condiciones generales del programa y la normativa sobre proteccion de datos</label></p>
+        
+
+        <p>Adjuntar foto: <input type="file"></p>
+
+        <p>
+            <label><input type="submit" value="Enviar"></label>
+            <label><input type="reset" value="Reiniciar"></label>
+        </p>
+    </form>
+</body>
+</html>
